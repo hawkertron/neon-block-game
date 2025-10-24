@@ -1,0 +1,106 @@
+:root {
+    --neon-cyan: #00ffff;
+    --neon-magenta: #ff00ff;
+    --neon-yellow: #ffff00;
+    --neon-lime: #00ff00;
+    --neon-orange: #ff8000;
+    --neon-blue: #0000ff;
+    --neon-red: #ff0000;
+    --glow-blur: 10px;
+}
+
+body {
+    background-color: #010101;
+    color: var(--neon-cyan);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.game-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+#game-board {
+    background-color: #0a0a0a;
+    border: 3px solid var(--neon-magenta);
+    box-shadow: 0 0 var(--glow-blur) var(--neon-magenta), 
+                inset 0 0 var(--glow-blur) var(--neon-magenta);
+}
+
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 5px #fff, 
+                 0 0 var(--glow-blur) var(--neon-yellow), 
+                 0 0 20px var(--neon-yellow);
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.info-box {
+    background-color: #111;
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 var(--glow-blur) var(--neon-cyan);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-lime);
+}
+
+#next-piece {
+    background-color: #0a0a0a;
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 8px var(--neon-cyan);
+    display: block;
+    margin: 0 auto;
+}
+
+#start-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #010101;
+    background-color: var(--neon-lime);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 0 var(--glow-blur) var(--neon-lime), 
+                0 0 20px var(--neon-lime);
+    transition: all 0.2s ease;
+}
+
+#start-button:hover {
+    color: #fff;
+    background-color: var(--neon-magenta);
+    box-shadow: 0 0 var(--glow-blur) var(--neon-magenta), 
+                0 0 20px var(--neon-magenta);
+}
